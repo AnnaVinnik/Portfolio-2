@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Portfolio</title>
-</head>
-<body>
-    <main class="container">
-        <aside class="sidebar">
-            <div class="sidebar__heading">
-                <h2>I'm <br>a photographer</h2>
-                <span>John Smith</span>
-            </div>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">Portfolio</li>
-                    <li class="nav__item">Contacts</li>
-                    <li class="nav__item">Write me</li>
-                    <!-- <li>/</li> -->
-                </ul>
-            </nav>
-        </aside>
-        <section class="main-slider">
-            <div class="portfolio card" id="Portfolio">
-                img 
-            </div>
-            <div class="contacts card" id="Contacts">
-                contacts
-            </div>
-            <div class="write-me card" id="Write me">
-                Form
-            </div>
-        </section>
-    </main>
-
-    <script src="script/app.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <main class="container">
+            <aside class="sidebar">
+                <div class="sidebar__heading">
+                    <h2>I'm
+                        <br>a photographer
+                    </h2>
+                    <span>John Smith</span>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">Portfolio</li>
+                        <li class="nav__item">Contacts</li>
+                        <li class="nav__item">Write me</li>
+                        <!-- <li>/</li> -->
+                    </ul>
+                </nav>
+            </aside>
+            <section class="main-slider">
+                <div class="portfolio card" id="Portfolio">
+                    <div class="portfolio-slider">
+                            <div class="slide" style="background-image: url(https://images.unsplash.com/photo-1580891756752-f163333bfd16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80);"></div>
+                            <div class="slide active" style="background-image: url(https://images.unsplash.com/photo-1605369572399-05d8d64a0f6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);"></div>
+                            <div class="slide" style="background-image: url(https://images.unsplash.com/photo-1658848588646-58417ec28548?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80);"></div>
+                            <div class="slide" style="background-image: url(https://images.unsplash.com/photo-1658575898948-4fde74967359?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);"></div>
+                            <div class="slide" style="background-image: url(https://images.unsplash.com/photo-1658344588642-8db0df0fcaaf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);"></div>
+                    </div>
+                </div>
+                <div class="contacts card" id="Contacts">
+                    contacts
+                </div>
+                <div class="write-me card" id="Write me">
+                    Form
+                </div>
+            </section>
+        </main>
+        <script src="script/app.js"></script>
+    </body>
 </html>

@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  height: 100vh;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    height: 100vh;
 }
 
 .container {
@@ -35,16 +38,23 @@ body {
 
 .sidebar__heading {
     position: relative;
-    font-size: 30px;
-    margin-bottom: 40px;
+    font-size: 42px;
+    margin-bottom: 30px;
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    font-family: 'Tangerine', cursive;
 }
 
 .sidebar__heading > span {
     position: absolute;
-    top: 22px;
-    left: 80px;
+    top: 21px;
+    left: 110px;
     color:#E09145;
     font-size: 24px;
+    font-family: serif;
+    font-weight: 100;
+    letter-spacing: 0.1em;
 }
 
 .nav {
@@ -86,4 +96,30 @@ body {
 .card {
     height: 100%;
     width: 100%;
+}
+
+.portfolio-slider {
+    height: 50%;
+    justify-content: center;
+    width: 70vw;
+}
+
+.portfolio-slider {
+    display: flex;
+    height: 100vh;
+    margin: 5px;
+}
+
+.portfolio-slider .slide {
+    flex: 2;
+    margin: 2px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: flex 1s;
+    cursor: pointer;
+}
+
+.portfolio-slider .slide.active {
+    flex: 10;
 }
