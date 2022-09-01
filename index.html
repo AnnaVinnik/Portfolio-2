@@ -19,8 +19,8 @@
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__item">Portfolio</li>
+                        <li class="nav__item">About me</li>
                         <li class="nav__item">Contacts</li>
-                        <li class="nav__item">Write me</li>
                         <!-- <li>/</li> -->
                     </ul>
                 </nav>
@@ -35,11 +35,43 @@
                             <div class="slide" style="background-image: url(https://images.unsplash.com/photo-1658344588642-8db0df0fcaaf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);"></div>
                     </div>
                 </div>
-                <div class="contacts card" id="Contacts">
-                    contacts
+                <div class="about-me card card__container" id="About me">
+                    <div class="about-me__img" style="background-image: url(https://images.unsplash.com/photo-1603574670812-d24560880210?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80);"></div>
+                    <h2 class="about-me__heading">Some facts about me:</h2>
+                    <ul class="about-me__list">
+                        <li class="about-me__list_item">Lorem ipsum dolor sit amet.</li>
+                        <li class="about-me__list_item">Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+                        <li class="about-me__list_item">Lorem ipsum dolor sit amet.</li>
+                        <li class="about-me__list_item">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aperiam.</li>
+                    </ul>
+                    <h2 class="my-story__heading">My story:</h2>
+                    <p class="my-story">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum praesentium illo quas aliquid numquam aperiam repellat sequi illum debitis quidem quo id odio, ea voluptates commodi voluptate nisi dolore ipsa architecto delectus eveniet veritatis assumenda. Exercitationem, ipsam magni. Autem deleniti eius optio dolorem delectus quod facilis eum qui debitis, minima numquam! <br> <br> Recusandae illo error, magnam, quam sapiente aliquid iste et ut ipsa eos eligendi ipsam debitis ullam quae totam culpa ab ad vitae officia dolores cupiditate architecto. Deleniti pariatur odio repellat ex? Accusamus molestiae, expedita fugiat sunt magni perspiciatis omnis quasi exercitationem beatae minus recusandae doloremque eligendi est architecto minima.</p>
                 </div>
-                <div class="write-me card" id="Write me">
-                    Form
+                <div class="contacts card card__container" id="Contacts">
+                    <h2 class="contacts__heading">You can contact me by</h2>
+                    <p>phone: +123456789 </p>
+                    <p>email: mymail@gmail.com</p>
+                    <span>or</span>
+                    <form action="" class="form frame">
+                        <laber class="input__label" for="name">Name:</laber>
+                        <input
+                            class="input"
+                            type="text"
+                            name="name"
+                            placeholder="John Smith"
+                        >
+                        <label class="input__label" for="phone">Phone:</label>
+                        <input
+                            class="input"
+                            type="text"
+                            name="phone"
+                            placeholder="+123456789"
+                        >
+                        <label class="input__label" for="comment">Comment:</label>
+                        <textarea class="input input_big" name="comment" placeholder="Your comment"></textarea>
+                        <br>
+                        <input type="submit" value="Send it" class="form__button">
+                    </form>
                 </div>
             </section>
         </main>

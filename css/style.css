@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
 * {
     box-sizing: border-box;
@@ -9,8 +9,9 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.1em;
+    font-weight: 300;
     height: 100vh;
 }
 
@@ -34,6 +35,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 10;
 }
 
 .sidebar__heading {
@@ -48,8 +50,8 @@ body {
 
 .sidebar__heading > span {
     position: absolute;
-    top: 21px;
-    left: 110px;
+    top: 26px;
+    left: 115px;
     color:#E09145;
     font-size: 24px;
     font-family: serif;
@@ -98,10 +100,9 @@ body {
     width: 100%;
 }
 
-.portfolio-slider {
-    height: 50%;
-    justify-content: center;
-    width: 70vw;
+.card__container {
+    max-width: 95%;
+    margin: 0 auto;
 }
 
 .portfolio-slider {
@@ -118,8 +119,167 @@ body {
     background-repeat: no-repeat;
     transition: flex 1s;
     cursor: pointer;
+    z-index: 10;
 }
 
 .portfolio-slider .slide.active {
     flex: 10;
+}
+
+.about-me {
+    position: relative;
+}
+
+.about-me__heading {
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    font-family: 'Tangerine', cursive;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 100;
+    color:#E09145;
+}
+
+.about-me__img {
+    width: 40%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    transform: rotate(-15deg);
+}
+
+.about-me__img::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    border: 1px solid #E09145;
+}
+
+.about-me__list {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    max-width: 50%;
+    /* text-align: end; */
+    list-style: circle;
+    /* line-height: 30px; */
+}
+
+.about-me__list_item {
+    margin-bottom: 20px;
+}
+
+.my-story__heading {
+    z-index: 30;
+    position: absolute;
+    top: 50%;
+    font-family: 'Tangerine', cursive;
+    font-size: 50px;
+}
+
+.my-story {
+    position: absolute;
+    top: 60%;
+    font-size: 15px;
+}
+
+.contacts {
+    text-align: center;
+}
+
+.contacts span {
+    margin-top: 10px;
+    display: block;
+    font-weight: 500;
+}
+
+.contacts__heading {
+    font-family: 'Tangerine', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+.form {
+    font-size: 24px;
+    margin: 0 auto; 
+    text-align: center;
+    font-weight: 300;
+    width: 90%;
+    letter-spacing: 0.1em;
+}
+
+.form__button {
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    border-bottom: 1px solid #E09145;
+    color:#FCD9B8;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: inset 0 0 4px #fcd9b879;
+    background-color: transparent;
+    transition: box-shadow 0.2s;
+}
+
+.form__button:hover {
+    box-shadow: inset 0 0 4px #fcd9b879,
+        0 0 8px #fcd9b879;
+}
+
+.input {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: 1px solid #E09145;
+    box-shadow: inset 0px 0px 5px rgb(68, 65, 60);
+
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    color: rgb(192, 190, 190);
+    transition: 0.4s;
+}
+
+.input:hover {
+    box-shadow: inset 0px 0px 5px rgb(122, 117, 105),
+        0 0 8px #fcd9b879;
+    transition: 0.1s;
+}
+
+.input:focus {
+    outline: none;
+    box-sizing: border-box;
+    color: rgb(213, 213, 213);
+    box-shadow: inset 0px 0px 5px rgb(122, 117, 105);
+}
+
+.input::placeholder {
+    font-weight: 100;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+}
+.input_big {
+    height: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-content: top;
+}
+
+.input__label {
+    display: block;
+    text-align: start;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
